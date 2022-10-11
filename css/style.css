@@ -1,3 +1,161 @@
-@import 'spacing-helpers.css';
-@import 'form.css';
+/*Reset css/*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.mt-0{
+    margin-top: 0;
+}
+
+.mb-0{
+    margin-bottom: 0;
+}
+
+.mt-4{
+    margin-top: 40px;
+}
+
+
+
+/*  fontSize: */
+.xs   {font-size: 0.75rem}
+.sm   {font-size: 0.875rem !important}
+.base {font-size: 1rem}
+.lg   {font-size: 1.125rem}
+.xl   {font-size: 1.25rem}
+.fs1  {font-size: 1vw}
+.fs2  {font-size: 1.4vw}
+.fs3  {font-size: 1.6vw}
+.fs4  {font-size: 1.8vw}
+.fs5  {font-size: 2vw}
+.fs6  {font-size: 2.2vw}
+.fs7  {font-size: 2.4vw}
+.fs8  {font-size: 2.6vw}
+
+
+/*Estilos Cabecera*/
+
+.form{
+    margin-block-start: 1rem;
+}
+
+.form-header{
+    block-size: 4rem;
+    border-radius: 4px;
+}
+
+.form-header p{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
+
+/*Estilos Formulario */
+.form-input input::placeholder{
+    color: #545454;
+   
+}
+
+.form-input  .input-field input{
+    padding-inline-start: 1rem;
+}
+.form-input span{
+    font-weight: 600;
+}
+.form-input span>a{
+    color: #be9127;
+    text-decoration: underline;
+   
+}
+
+[type="checkbox"]+span:not(.lever){
+    padding-left: 45px;
+}
+
+
+
+.form-input .input-field input[type=email] , [type=tel] , [type=text] , [type=number] {
+    border-bottom: 1px solid #fad68c !important;
+    box-shadow: 0 1px 0 0 #fad68c !important;
+  
+  }
+
+[type="checkbox"].filled-in:not(:checked)+span:not(.lever):after {
+    height: 24px;
+    width: 24px;
+    border: 2px solid #f5a52d;
+    border-radius: 6px;
+    background-color: #fff8e9;
+}
+
+[type="checkbox"].filled-in:checked+span:not(.lever):before {
+    top: 2px;
+    left: 3px;
+    width: 8px;
+    height: 13px;
+    border-right: 2px solid #fff8e9;
+    border-bottom: 2px solid #fff8e9;
+}
+
+[type="checkbox"].filled-in:checked+span:not(.lever):after {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #f5a52d;
+    border-radius: 6px;
+    background-color: #f5a52d;
+}
+
+.form-input .waves-effect{
+    display: block;
+}
+
+.form-input .btn, .form-input .btn-large, .form-input .btn-small{
+ 
+    background-color: #fdcb46;
+    color: black;
+    font-weight: bold;
+ 
+}
 
