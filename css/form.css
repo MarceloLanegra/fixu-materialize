@@ -1,0 +1,22 @@
+.form{
+    border: 1px solid red;
+}
+
+.form-header p{
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.form-input input::placeholder{
+    color: #000000;
+}
+
+.input-field input[type=text] {
+    border-bottom: 1px solid #fad68c !important;
+    box-shadow: 0 1px 0 0 #fad68c !important;
+  }
+
+  .input-field input[type=email] {
+    border-bottom: 1px solid #fad68c !important;
+    box-shadow: 0 1px 0 0 #fad68c !important;
+  }
