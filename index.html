@@ -12,24 +12,32 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Formulario</title>
   </head>
   <body>
-
-   <div class="container">
-      <div class="form">
-        <div class="form-header mt-0 mb-0 row valign-wrapper margin bottom-0 black">
-          <div class="col s9">
-            <p class="margin top-0 margin bottom-0 white-text">Contáctanos</p>
+    <section>
+      <div id="container" class="valign-wrapper container h-100 grey darken-1">
+        <div class="form-principal">
+          <div class="row">
+            <!--Header de formulario-->
+              <div class="row form-header mt-0 mb-0  valign-wrapper black">
+                <div class="col s9">
+                  <p class="white-text">
+                    Contáctanos
+                  </p>
+                </div>
+                <div class="col s3 right-align">
+                  <button class="waves-effect waves-light btn-large black">
+                    <i class="material-icons white-text" aria-disabled="true">close</i>
+                  </button>
+                </div>
+              </div>
           </div>
-          <div class="col s3 center-align">
-            <i class="material-icons white-text">close</i>
-          </div>
-        </div>
-        <div class="form-input">
-          <div class="row mt-0 mb-0">
-            <form class="col s12">
+          <!-- Cuerpo formulario -->  
+          <div class="row form-body white">
+            <!-- Inputs formulario -->
+            <form class="form-input col s12 l7 ">
               <div class="row mt-0 mb-0">
                 <div class="input-field col s12">
                   <input
@@ -80,27 +88,34 @@
                   />
                 </div>
               </div>
-             <div class="row mt-0 mb-0"">
-               <div class="col s12">
-                <p>
+              <div class="row mt-3 mb-0">
+                <div class="col s12">
+                  <p>
                     <label>
-                      <input type="checkbox" class="filled-in"/>
-                      <span class="black-text sm">Aceptar <a class="sm">términos y condiciones</a></span>
+                      <input type="checkbox" class="filled-in" />
+                      <span class="black-text"
+                        >Aceptar <a>términos y condiciones</a></span
+                      >
                     </label>
                   </p>
-               </div>
-             </div>
+                </div>
+              </div>
               <div class="row mt-4">
-                <div class="col s12">
-                    <a class="waves-effect waves-light btn-large">CONTÁCTANOS</a>
+                <div class="col s12 m6 offset-m3 l12">
+                  <a class="waves-effect waves-light btn-large">CONTÁCTANOS</a>
                 </div>
               </div>
             </form>
+            <!-- Imagen de formulario -->
+            <div class="form-image col s12 l5 center-align">
+              <img class="responsive-img" src="./images/keys.webp" />
+            </div>
           </div>
         </div>
-        <img class="responsive-img" src="./images/keys.webp">
       </div>
-    </div>
+    </section>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

@@ -1,0 +1,13 @@
+@import "form-header.css";
+@import "form-body.css";
+
+.form-principal .row {
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .form-principal {
+    max-width: 880px;
+    margin: auto;
+  }
+}
